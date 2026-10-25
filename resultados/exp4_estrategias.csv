@@ -1,0 +1,4 @@
+estrategia,n,media,desv,IC95
+Aleatoria,5000,45.99,18.41,0.51
+Voraz,5000,158.96,62.33,1.73
+Montecarlo,150,217.89,45.22,7.24

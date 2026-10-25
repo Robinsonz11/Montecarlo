@@ -5,6 +5,7 @@ Uso:  python simulacion.py            (rápido)
       python simulacion.py --full     (más réplicas, más preciso)
 """
 import csv
+import os
 import random
 import statistics as st
 import sys
@@ -20,6 +21,7 @@ from yahtzee import (Aleatoria, Voraz, Montecarlo, jugar_partida, es_yahtzee,
 FULL = "--full" in sys.argv
 SEED = 2024
 OUT = "resultados"
+os.makedirs(OUT, exist_ok=True)
 
 
 def guardar(nombre, filas, cabecera):
